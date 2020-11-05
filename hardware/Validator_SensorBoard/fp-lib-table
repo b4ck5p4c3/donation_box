@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connector_Connfly_WF)(type KiCad)(uri C:/Users/moto2/Downloads/kicad_coon/Connector_Connfly_WF.pretty)(options "")(descr ""))
+  (lib (name ValidatorController)(type KiCad)(uri ${KIPRJMOD}/ValidatorController.pretty)(options "")(descr ""))
+)

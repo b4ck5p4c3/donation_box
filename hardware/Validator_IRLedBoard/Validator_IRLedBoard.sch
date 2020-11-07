@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LED board"
+Date ""
+Rev "1.0"
+Comp "B4CKSP4CE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5FA6D53B
+P 4550 2750
+F 0 "D1" H 4543 2966 50  0000 C CNN
+F 1 "LED" H 4543 2875 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_IRGrey" H 4550 2750 50  0001 C CNN
+F 3 "~" H 4550 2750 50  0001 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FA6EF24
+P 4550 3350
+F 0 "D2" H 4543 3566 50  0000 C CNN
+F 1 "LED" H 4543 3475 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 4550 3350 50  0001 C CNN
+F 3 "~" H 4550 3350 50  0001 C CNN
+	1    4550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FA6FBE3
+P 4550 3900
+F 0 "D3" H 4543 4116 50  0000 C CNN
+F 1 "LED" H 4543 4025 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 4550 3900 50  0001 C CNN
+F 3 "~" H 4550 3900 50  0001 C CNN
+	1    4550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FA708F0
+P 5300 2750
+F 0 "R1" V 5093 2750 50  0000 C CNN
+F 1 "510" V 5184 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 2750 50  0001 C CNN
+F 3 "~" H 5300 2750 50  0001 C CNN
+	1    5300 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FA70F82
+P 5300 3350
+F 0 "R2" V 5093 3350 50  0000 C CNN
+F 1 "510" V 5184 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3350 50  0001 C CNN
+F 3 "~" H 5300 3350 50  0001 C CNN
+	1    5300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FA71295
+P 5300 3900
+F 0 "R3" V 5093 3900 50  0000 C CNN
+F 1 "510" V 5184 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3900 50  0001 C CNN
+F 3 "~" H 5300 3900 50  0001 C CNN
+	1    5300 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FA71BF6
+P 6700 3350
+F 0 "J1" H 6780 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 6780 3251 50  0000 L CNN
+F 2 "Validator_SensorBoard:CWF-2" H 6700 3350 50  0001 C CNN
+F 3 "~" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2750 5150 2750
+Wire Wire Line
+	5150 3350 4700 3350
+Wire Wire Line
+	4700 3900 5150 3900
+Wire Wire Line
+	4400 2750 4150 2750
+Wire Wire Line
+	4150 2750 4150 3350
+Wire Wire Line
+	4150 3350 4400 3350
+Wire Wire Line
+	4150 3350 4150 3900
+Wire Wire Line
+	4150 3900 4400 3900
+Connection ~ 4150 3350
+Wire Wire Line
+	5450 2750 5700 2750
+Wire Wire Line
+	5700 2750 5700 3350
+Wire Wire Line
+	5700 3350 5450 3350
+Wire Wire Line
+	5450 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 3350
+Connection ~ 5700 3350
+$Comp
+L power:GND #PWR0101
+U 1 1 5FA76C9C
+P 4150 4300
+F 0 "#PWR0101" H 4150 4050 50  0001 C CNN
+F 1 "GND" H 4155 4127 50  0000 C CNN
+F 2 "" H 4150 4300 50  0001 C CNN
+F 3 "" H 4150 4300 50  0001 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3900 4150 4150
+Connection ~ 4150 3900
+Wire Wire Line
+	5700 3350 5900 3350
+Wire Wire Line
+	6500 3450 6250 3450
+Wire Wire Line
+	6250 3450 6250 4150
+Wire Wire Line
+	6250 4150 5900 4150
+Connection ~ 4150 4150
+Wire Wire Line
+	4150 4150 4150 4300
+$Comp
+L power:+12V #PWR0102
+U 1 1 5FA78ACB
+P 5700 2750
+F 0 "#PWR0102" H 5700 2600 50  0001 C CNN
+F 1 "+12V" H 5715 2923 50  0000 C CNN
+F 2 "" H 5700 2750 50  0001 C CNN
+F 3 "" H 5700 2750 50  0001 C CNN
+	1    5700 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 2750
+$Comp
+L Device:CP1_Small C1
+U 1 1 5FA7AC6F
+P 5900 3650
+F 0 "C1" H 5991 3696 50  0000 L CNN
+F 1 "1u" H 5991 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_4x5.4" H 5900 3650 50  0001 C CNN
+F 3 "~" H 5900 3650 50  0001 C CNN
+	1    5900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3550 5900 3350
+Connection ~ 5900 3350
+Wire Wire Line
+	5900 3350 6500 3350
+Wire Wire Line
+	5900 3750 5900 4150
+Connection ~ 5900 4150
+Wire Wire Line
+	5900 4150 4150 4150
+$EndSCHEMATC
